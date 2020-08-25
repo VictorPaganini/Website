@@ -1,0 +1,234 @@
+/*
+MAIN TAGS
+*/
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/*
+BUTTONS
+*/
+
+.btn-outline-secondary {
+    background-color: transparent !important;
+    border-color: #403f57 !important;
+    color: #403f57 !important;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary:before {
+    content: '';
+    position: absolute;
+    background-color: #5DF3BA;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover:before {
+    width: 100%;
+}
+
+.btn-secondary {
+    background-color: #403f57 !important;
+    border-radius: 0;
+    border-color: #403f57 !important;
+}
+
+.btn-secondary:hover {
+    color: #5DF3BA !important;
+}
+
+.btn-primary {
+    background-color: #5DF3BA;
+    border-radius: 0;
+    border-color: #5DF3BA !important;
+    color: #403f57 !important;
+}
+
+.btn-primary:hover {
+    background-color: #403f57 !important;
+    color: #5DF3BA !important;
+    border-color: #5DF3BA !important;
+}
+
+/*
+NAVBAR
+*/
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #403f57;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #5DF3BA;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+}
+
+/*
+ADDITIONAL INFO
+*/
+
+.call-to-action {
+    background-color: #403f57;
+    color: #fafaff;
+}
+
+.heading-line {
+    height: 3px;
+    width: 10%;
+    background-color: #5DF3BA;
+}
+
+/*
+SERVICES
+*/
+
+#services {
+    text-align: center;
+}
+
+#services i {
+    font-size: 2rem;
+    color: #E84670;
+}
+
+/*
+PORTFOLIO
+*/
+
+.dark {
+    color: #f2f2f2;
+    background-color: #403f57;
+    height: 300px;
+}
+
+.dark h4 {
+    color: #5DF3BA;
+}
+
+.dark i {
+    font-size: 1.3rem;
+    color: #5DF3BA;
+}
+
+#portfolio .img-fluid {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#portfolio .col-lg-3 {
+    position: relative;
+}
+
+/*
+CONTACT ME
+*/
+
+.form-group input,
+.form-group textarea {
+    border-radius: 0%;
+    border-color: #403f57;
+}
+
+/*
+FOOTER
+*/
+
+.footer {
+    color: #403f57;
+}
+
+.copyright {
+    background-color: #403f57;
+    color: #fafaff;
+}
+
+.copyright p {
+    margin-bottom: 0 !important;
+}
+
+/*
+RESPONSIVENESS
+*/
+
+@media screen and (max-width: 767px) {
+    .navbar .nav-item {
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .call-to-action .container {
+        width: 100% !important;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #mobile-position-1 {
+        order: 1;
+    }
+
+    #mobile-position-2 {
+        order: 2;
+    }
+
+    #mobile-position-3 {
+        order: 3;
+    }
+
+    #mobile-position-4 {
+        order: 4;
+    }
+
+    #mobile-position-5 {
+        order: 5;
+    }
+
+    #mobile-position-6 {
+        order: 6;
+    }
+
+    #mobile-position-7 {
+        order: 7;
+    }
+
+    #mobile-position-8 {
+        order: 8;
+    }
+
+}
